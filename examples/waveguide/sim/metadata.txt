@@ -1,0 +1,67 @@
+{
+    "gds_file_path": "/home/tftt/PycharmProjects/GDStoMEEP/examples/waveguide/waveguide.gds",
+    "volumes": [
+        {
+            "lid": 0,
+            "layer": "2",
+            "material": "LiNbO3_z",
+            "wavelength_nm": 1550,
+            "base": 0.0,
+            "height": 1.0,
+            "angle_deg": -10,
+            "ready": true
+        },
+        {
+            "lid": 1,
+            "layer": "1",
+            "material": "SiO2",
+            "wavelength_nm": 1550,
+            "base": -5.0,
+            "height": 15.0,
+            "angle_deg": 0,
+            "ready": true
+        }
+    ],
+    "simulation_data": {
+        "center": [
+            0.0,
+            0.0,
+            0.5
+        ],
+        "range": [
+            4.0,
+            6.0,
+            5.0
+        ],
+        "resolution": 40.0,
+        "boundary_type": "PML",
+        "boundary_thickness": 0.5,
+        "source_type": "Gaussian",
+        "source_wl": 1.55,
+        "gauss_center": [
+            0.0,
+            0.0,
+            0.5
+        ],
+        "gauss_direction": [
+            1.0,
+            0.0,
+            0.0
+        ],
+        "gauss_polarisation": [
+            0.0,
+            1.0,
+            0.0
+        ],
+        "gauss_waist": 0.4
+    },
+    "ui_state": {
+        "h_slider_pos": -0.14893640410882014,
+        "v_slider_pos": 15.271036230588841,
+        "show_sim_range": true,
+        "show_gaussian": true,
+        "show_sim_boundaries_pml": true,
+        "show_sim_boundaries_absorber": false,
+        "show_sim_boundaries_pmetal": false
+    }
+}
