@@ -20,9 +20,9 @@ I've designed the app to make it easy to switch solvers if a reliable, faster al
 |---|---|:---:|:---------:|:---:|:---:|:---:|
 | Lumerical | FDTD, FEEM, FDE | ❌ |     ✅     | ✅ | ✅ | ✅ |
 | Tidy3D | FDTD, FDE | ❌ |     ✅     | ✅ | ✅ | ✅ |
-| GDSFactory+ | FDTD, FEEM | ❌ |     ○*     | ○* | ○ | ✅ |
-| MEEP | FDTD, FDE** | ✅ |    ○     | ❌ | ○ | ✅ |
-| FDTDX | FDTD | ✅ |     ✅     | ❌ | ○ | ❌ |
+| GDSFactory+ | FDTD, FEEM | ❌ |     🟡*     | 🟡* | 🟡 | ✅ |
+| MEEP | FDTD, FDE** | ✅ |    🟡     | ❌ | 🟡 | ✅ |
+| FDTDX | FDTD | ✅ |     ✅     | ❌ | 🟡 | ❌ |
 | COMSOL | FEEM | ❌ |     ✅     | ✅ | ✅ | ✅ |
 | Gyptis | FEEM | ✅ |     ❌     | ❌ | ✅ | ✅ |
 
@@ -104,3 +104,4 @@ Code written completely by AI has been marked with model name written after hash
 2. Add option of mode solver code generation. 
 3. Make available through Docker?
 4. Testing on other setups.
+5. Add symmetry support.
