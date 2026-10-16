@@ -4,9 +4,7 @@
 <img src="gallery/gdstomeep.gif" width="100%">
 
 ## About 
-<small >Can we make free photonics simulation process stress-free and smooth?</small>
-<small ><strong>NO! (ó﹏ò｡)</strong></small >
-<small>...but we try anyway. ⚡︎</small>
+<sup> Can we make free photonics simulation process stress-free and smooth?<strong>NO! (ó﹏ò｡)</strong> ...but we try anyway. ⚡︎</sup>
 
 This project was created for one sole purpose: making simulating photonics for free more bearable.
 
