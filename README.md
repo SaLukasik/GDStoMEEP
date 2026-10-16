@@ -1,3 +1,12 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/python-3.13-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/install-conda-44A833?style=for-the-badge&logo=anaconda&logoColor=white" alt="Conda">
+  <img src="https://img.shields.io/badge/solver-MEEP-orange?style=for-the-badge" alt="MEEP">
+  <img src="https://img.shields.io/badge/input-GDSII-blueviolet?style=for-the-badge" alt="GDSII">
+  <img src="https://img.shields.io/badge/platform-linux-lightgrey?style=for-the-badge&logo=linux&logoColor=white" alt="Linux">
+  <img src="https://img.shields.io/badge/status-work%20in%20progress-yellow?style=for-the-badge" alt="Status">
+  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen?style=for-the-badge" alt="PRs welcome">
+</p>
 # GDStoMEEP
 **App with GUI for creating MEEP structures and simulations from GDS files.** 
   
