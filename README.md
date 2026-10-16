@@ -4,7 +4,7 @@
 <img src="gallery/gdstomeep.gif" width="100%">
 
 ## About 
-<sup> Can we make free photonics simulation process stress-free and smooth?<strong>NO! (ó﹏ò｡)</strong> ...but we try anyway. ⚡︎</sup>
+<sup> Can we make free photonics simulation process stress-free and smooth?<strong> NO! (ó﹏ò｡)</strong> ...but we try anyway. ⚡︎</sup>
 
 This project was created for one sole purpose: making simulating photonics for free more bearable.
 
@@ -58,8 +58,40 @@ To add new material please modify materials.py file, by appending a custom funct
 
 
 ## Interface
+### Main options
+<img src="gallery/menu.png" width="100%">
+Setting path to .gds file and output directory, where simulation files will be created.
+GENERATE button will create folder or, if pushed again after warning, overwrite the content. It also works as a 'save' button,
+as the app state is also copied. It can be loaded with 'LOAD' button.
+
+### Preview of the structure
+<img src="gallery/preview.png" width="100%">
+XY plot appears as soon as the structure is loaded. It's always semitransparent to show all layers that can be extruded.
+XZ and XY cross-sections appear after at least one volume is added. By clicking elements in the legend
+one can hide them. Legend tab allows to hide/show specific group of elements (either with common material or layer).
+Note that currently the plotting is set to use as much as available area as possible, meaning the axes might not be scaled equally (for example wide structure might look squeezed).
+Colors are set automatically based on the material name.
 
 
+### Volume designer
+After clicking 'ADD VOLUME' you can set which layer is suppose to be extruded and what material should it represent. The 
+shape from .gds file becomes base, which is pulled along Z axis (negative height means the base will be above bottom). Positive prism angle with positive height means top being wider than base.
+
+Structures are inserted into the MEEP simulation domain starting from the bottom one and ending with the top one (so if two structures overlap, the one that is higher in the table will cover the other). You can change the order of volumes using the arrows in the table.
+
+You can remove a specific volume by clicking 'X' in the 'remove' column, or remove all volumes using 'REMOVE VOLUMES'.
+
+### Simulation designer
+
+In Simulation Designer, you can:
+- set area of simulation, it's resolution and location,
+<img src="gallery/sim_ar.png" width="100%">
+
+- set the boundaries (metal, PML, highly absorbing),
+<img src="gallery/bounds.png" width="100%">
+
+- set the Gaussian, plain wave, or fundamental mode source (exact parameters depend on the type).
+<img src="gallery/source.png" width="100%">
 
 ## Installation
 
