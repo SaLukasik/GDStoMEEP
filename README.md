@@ -1,8 +1,10 @@
 # GDStoMEEP
 **App with GUI for creating MEEP structures and simulations from GDS files.** 
+  
+<img src="gallery/gdstomeep.gif" width="100%">
 
 ## About 
-<small style="color: #87CEFA;">Can we make free photonics simulation stress-free and smooth?</small>
+<small style="color: #87CEFA;">Can we make free photonics simulation process stress-free and smooth?</small>
 <strong style="color: #87CEFA;">NO!</strong>
 <small style="color: #87CEFA;">...but we try anyway. ⚡︎</small>
 
@@ -105,3 +107,4 @@ Code written completely by AI has been marked with model name written after hash
 3. Make available through Docker?
 4. Testing on other setups.
 5. Add symmetry support.
+6. Add uniform axis scaling option in GUI.
