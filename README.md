@@ -7,7 +7,9 @@
   <img src="https://img.shields.io/badge/status-work%20in%20progress-yellow?style=for-the-badge" alt="Status">
   <img src="https://img.shields.io/badge/PRs-welcome-brightgreen?style=for-the-badge" alt="PRs welcome">
 </p>
+
 # GDStoMEEP
+
 **App with GUI for creating MEEP structures and simulations from GDS files.** 
   
 <img src="gallery/gdstomeep.gif" width="100%">
