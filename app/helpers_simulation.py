@@ -281,18 +281,17 @@ def add_mesh(geometry, shapes, tol, layer, material, base_z, height, angle_deg, 
             continue
 
         top_pts = _miter_offset(pts, s) if s != 0.0 else pts
-        allp = np.vstack([pts, top_pts])
-        cx = (allp[:, 0].min() + allp[:, 0].max()) / 2.0
-        cy = (allp[:, 1].min() + allp[:, 1].max()) / 2.0
+        
+            base = (cq.Workplane('XY').workplane(offset=base_z)
+                    .polyline([tuple(p) for p in pts]).close().wires().val())
+            top = (cq.Workplane('XY').workplane(offset=base_z + h)
+                   .polyline([tuple(p) for p in top_pts]).close().wires().val())
+            body = cq.Workplane('XY').add(cq.Solid.makeLoft([base, top], ruled=True))
+            cq.exporters.export(body, fname)
+            with warnings.catch_warnings(record=True) as _:
+                warnings.simplefilter("always")
+                mesh = mp.Mesh.from_file(fname, material=material)  # no center -> no translation
 
-        base = cq.Workplane('XY').polyline([tuple(p) for p in pts]).close().wires().val()
-        top = (cq.Workplane('XY').workplane(offset=h)
-               .polyline([tuple(p) for p in top_pts]).close().wires().val())
-        body = cq.Workplane('XY').add(cq.Solid.makeLoft([base, top], ruled=True))
-        cq.exporters.export(body, fname)
-        with warnings.catch_warnings(record=True) as _:
-            warnings.simplefilter("always")
-            mesh = mp.Mesh.from_file(fname, material=material, center=mp.Vector3(cx, cy, base_z + h / 2))
 
         geometry.append(mesh)
     if os.path.exists(fname):
