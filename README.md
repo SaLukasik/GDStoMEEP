@@ -149,3 +149,4 @@ Code written completely by AI has been marked with model name written after hash
 4. Testing on other setups.
 5. Add symmetry support.
 6. Add uniform axis scaling option in GUI.
+7. Add option to read shapes from .svg format.
